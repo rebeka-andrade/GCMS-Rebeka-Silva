@@ -6,4 +6,4 @@ Repositório pessoal da disciplina GCMS!
 
 Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 
-* Rebeka Andrade (@Peixe-blue, criadora)
+* Rebeka Andrade (@rebeka-andrade, criadora)
