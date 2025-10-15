@@ -1,7 +1,5 @@
 # GCMS-Rebeka-Silva
 
-# GCMS-Rebeka-Silva
-
 Repositório pessoal da disciplina GCMS!
 
 ## Colaboradores
