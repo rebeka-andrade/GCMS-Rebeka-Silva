@@ -35,4 +35,14 @@ class WebAppApplicationTests {
                         .string(containsString("Hello, Rebeka!")));
 
     }
+
+       @Test
+    public void shouldReturnDefaultMessage2() throws Exception {
+        this.mockMvc.perform(get("/RebekaClone"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content()
+                        .string(containsString("Hello, RebekaClone!")));
+
+    }
+
 }
