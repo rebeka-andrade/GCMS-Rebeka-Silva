@@ -16,22 +16,23 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
     @RequestMapping("/")
-    public @ResponseBody
-    String greeting() {
+    public @ResponseBody String greeting() {
         return "Hello, World!";
     }
 
     @RequestMapping("/Rebeka")
-    public @ResponseBody
-    String greetingFulano() {
+    public @ResponseBody String greetingFulano() {
         return "Hello, Rebeka!";
     }
 
-    
     @RequestMapping("/RebekaClone")
-    public @ResponseBody
-    String greetingWallace() {
+    public @ResponseBody String greetingWallace() {
         return "Hello, RebekaClone!";
+    }
+
+    @RequestMapping("/hotfix")
+    public @ResponseBody String greetingCodigo() {
+        return "Hotfix endpoint funcionando!";
     }
 
 }
