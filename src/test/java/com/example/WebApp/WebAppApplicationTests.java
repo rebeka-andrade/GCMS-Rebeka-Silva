@@ -15,43 +15,43 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 class WebAppApplicationTests {
 
-    @Autowired
-    private MockMvc mockMvc;
+        @Autowired
+        private MockMvc mockMvc;
 
-    @Test
-    public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(content()
-                        .string(containsString("Hello, World!")));
+        @Test
+        public void shouldReturnDefaultMessage() throws Exception {
+                this.mockMvc.perform(get("/"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, World!")));
 
-    }
+        }
 
-    @Test
-    public void shouldReturnDefaultMessage1() throws Exception {
-        this.mockMvc.perform(get("/Rebeka"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(content()
-                        .string(containsString("Hello, Rebeka!")));
+        @Test
+        public void shouldReturnDefaultMessage1() throws Exception {
+                this.mockMvc.perform(get("/Rebeka"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Rebeka!")));
 
-    }
+        }
 
-       @Test
-    public void shouldReturnDefaultMessage2() throws Exception {
-        this.mockMvc.perform(get("/RebekaClone"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(content()
-                        .string(containsString("Hello, RebekaClone!")));
+        @Test
+        public void shouldReturnDefaultMessage2() throws Exception {
+                this.mockMvc.perform(get("/RebekaClone"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, RebekaClone!")));
 
-    }
+        }
 
-    @Test
-    public void shouldReturnDefaultMessage3() throws Exception {
-        this.mockMvc.perform(get("/hotfix"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(content()
-                        .string(containsString("Hotfix endpoint atualizado na branch main!")));
+        @Test
+        public void shouldReturnDefaultMessage3() throws Exception {
+                this.mockMvc.perform(get("/hotfix"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hotfix endpoint funcionando!")));
 
-    }
+        }
 
 }

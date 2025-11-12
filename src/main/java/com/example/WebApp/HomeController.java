@@ -32,7 +32,7 @@ public class HomeController {
 
     @RequestMapping("/hotfix")
     public @ResponseBody String greetingCodigo() {
-        return "Hotfix endpoint atualizado na branch main!";
+        return "Hotfix endpoint funcionando!";
     }
 
 }
