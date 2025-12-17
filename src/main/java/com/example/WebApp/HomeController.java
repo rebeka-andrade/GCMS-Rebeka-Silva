@@ -32,7 +32,7 @@ public class HomeController {
 
     @RequestMapping("/hotfix")
     public @ResponseBody String greetingCodigo() {
-         "Hotfix endpoint funcionando!";
+        return "Hotfix endpoint funcionando!";
     }
 
     @RequestMapping("/jenkins")
