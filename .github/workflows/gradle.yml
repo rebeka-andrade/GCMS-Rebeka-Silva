@@ -17,6 +17,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+     image: docker://rebeka006/rebekadocker:imagem-docker
     permissions:
       contents: read
 
