@@ -35,4 +35,9 @@ public class HomeController {
          "Hotfix endpoint funcionando!";
     }
 
+    @RequestMapping("/jenkins")
+    public @ResponseBody String greetingJenkins() {
+        return "jenkins funcionando!";
+    }
+
 }
